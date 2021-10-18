@@ -1,0 +1,107 @@
+﻿@charset "utf-8";
+* {
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    font-family: Tahoma, "PingFang SC", "Microsoft Yahei", "Source Han Sans CN", SimHei, SimSun;
+}
+
+body{
+    text-align: center;
+    background-color: #f2f2f2;
+    z-index: 99;
+    width: 740px;/*960px*/
+    margin: 12px auto 0px auto;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: solid #cccccc 1px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#jia {
+	width: 718px;
+	height: 198px;
+}
+#jie {
+	width: 718px;
+	height: 324px;
+}
+#jia, #jie {
+    margin: 0 auto;
+    margin-bottom: 10px;
+	border: solid #cccccc 1px;
+	border-radius: 6px;
+    background: #FFF;
+    resize: vertical;  /* vertical高度可调, horizontal宽度可调, none不允许调整 */
+}
+
+textarea {
+    padding: 10px 10px;
+    color: #5a5a5a;
+    font-size: 14px;
+    text-shadow: 0px 0px 5px rgba(252,200,0,0.10);
+    outline: none;
+}
+textarea:hover, textarea:focus {
+	box-shadow: 0px 0px 5px rgba(252,200,0,1.00);
+}
+input{
+	width: 160px;
+	height: 32px;
+    color: #333;
+    text-align: center;
+	font-size: 14px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+	border: solid #cccccc 1px;
+	border-radius: 5px;
+    background: #fdc903;
+	outline: none;
+}
+input:hover,lable:hover,.dropdown:hover .dropbtn {
+	color: #FFF;
+	font-weight: bold;
+	border: solid #fdc903 2px;
+	background: #595959;
+	cursor: pointer;
+}
+
+/* 屏幕分辨率＜950px */
+
+@media screen and (max-width: 950px)
+{
+
+    body {
+        width: 98%;
+    }
+    #jia, #jie {
+        float: unset;
+        width: 90%;
+    }
+    input{
+        float: unset;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
