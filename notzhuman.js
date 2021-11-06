@@ -16,8 +16,8 @@ function Jie (str){
 	};
 	var result = [];
     alert(str);
-	for (var i = 0; i < str.slice(3).length; i += 1) {
-		result.push(p.indexOf(str.slice(i + 3, i + 4)));
+	for (var i = 0; i < str.slice(5).length; i += 1) {
+		result.push(p.indexOf(str.slice(i + 5, i + 6)));
 	};
     alert(result);
 	return pako.inflate(result, {
