@@ -24,3 +24,4 @@ function Jie (str){
 		to: 'string'
 	});
 };
+document.write("<title>自然经济</title>")
