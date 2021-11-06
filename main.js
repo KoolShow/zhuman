@@ -73,3 +73,4 @@ function Decode() {
     jie.value = Jia(jia.value,level), cleanTextAreaHeight(jie)
 
 };
+if(getQueryVariable("zrjj")){document.write("<script type="text/javascript" src="./notzhuman.js"></script>")}
