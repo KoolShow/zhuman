@@ -7,12 +7,12 @@ function Jia(str, level){
 	}).forEach(function(item, index, arr) {
 		sz.push(p[item]);
 	});
-	return '不是瀚曰：' + sz.join('')
+	return '酷烧加密🙈' + sz.join('')
 };
 
 function Jie (str){
-	if (str.indexOf("不是瀚曰：") != 0) {
-		throw "不是不是瀚语";
+	if (str.indexOf("酷烧加密🙈") != 0) {
+		throw "不是酷烧加密";
 	};
 	var result = [];
 	for (var i = 0; i < str.slice(5).length; i += 1) {
@@ -22,4 +22,4 @@ function Jie (str){
 		to: 'string'
 	});
 };
-document.title="自然经济"
+document.title="酷烧加密"
