@@ -60,7 +60,7 @@ function Encode() {
 function Decode() {
     var jia = document.getElementById("jia"),
     jie = document.getElementById("jie");
-    jia.value = "暂停服务";
+    jie.value = "暂停服务";
     return;
     jie.value = Jia(jia.value,level), cleanTextAreaHeight(jie)
 
