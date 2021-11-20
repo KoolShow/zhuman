@@ -54,14 +54,14 @@ var level=9;
 function Encode() {
     var jia = document.getElementById("jia"),
     jie = document.getElementById("jie");
-    jia.value = "暂停服务";
-    return;
     jia.value = Jie(jie.value), cleanTextAreaHeight(jia)
 
 };
 function Decode() {
     var jia = document.getElementById("jia"),
     jie = document.getElementById("jie");
+    jia.value = "暂停服务";
+    return;
     jie.value = Jia(jia.value,level), cleanTextAreaHeight(jie)
 
 };
