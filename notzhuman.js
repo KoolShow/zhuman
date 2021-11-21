@@ -7,12 +7,12 @@ function Jia(str, level){
 	}).forEach(function(item, index, arr) {
 		sz.push(p[item]);
 	});
-	return '酷烧加密🙈' + sz.join('')
+	return '自然经济：' + sz.join('')
 };
 
 function Jie (str){
-	if (str.indexOf("酷烧加密🙈") != 0) {
-		throw "不是酷烧加密";
+	if (str.indexOf("自然经济：") != 0) {
+		return "不是自然经济捏😅";
 	};
 	var result = [];
 	for (var i = 0; i < str.slice(5).length; i += 1) {
@@ -22,7 +22,7 @@ function Jie (str){
 		to: 'string'
 	});
 };
-document.title="酷烧加密"
+document.title="自然经济"
 level=9
 function Encode() {
     var jia = document.getElementById("jia"),
