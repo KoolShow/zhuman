@@ -27,7 +27,7 @@ function Jia(str, level){
 
 function Jie (str){
 	if (str.indexOf("瀚曰：") != 0) {
-		throw "不是瀚语";
+		return "不是注满捏😰";
 	};
 	var result = [];
 	for (var i = 0; i < str.slice(3).length; i += 4) {
@@ -60,8 +60,6 @@ function Encode() {
 function Decode() {
     var jia = document.getElementById("jia"),
     jie = document.getElementById("jie");
-    jie.value = "暂停服务";
-    return;
     jie.value = Jia(jia.value,level), cleanTextAreaHeight(jie)
 
 };
