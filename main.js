@@ -88,7 +88,6 @@ if (getQueryVariable("zrjj")) {
     };
 };
 
-
 function cleanTextAreaHeight(a) {
     var d = a.getAttribute("id"),
         c = "auto";
@@ -117,3 +116,19 @@ function Encode() {
     jie.value = Jia(jia.value, config.level), cleanTextAreaHeight(jie)
 
 };
+
+window.onload = () => {
+    let mode = getQueryVariable("mode");
+    let word = getQueryVariable("wd");
+    if (word) {
+        if (mode == 'encode') {
+            var jia = document.getElementById("jia");
+            jia.value = word;
+            Encode();
+        } else if (mode == 'decode') {
+            var jie = document.getElementById("jie");
+            jie.value = word;
+            Decode();
+        }
+    }
+}
