@@ -62,14 +62,14 @@ function isTouchDevice() {
     return "ontouchstart" in document.documentElement
 };
 
-function Encode() {
+function Decode() {
     var jia = document.getElementById("jia"),
         jie = document.getElementById("jie");
     jia.value = Jie(jie.value), cleanTextAreaHeight(jia)
 
 };
 
-function Decode() {
+function Encode() {
     var jia = document.getElementById("jia"),
         jie = document.getElementById("jie");
     jie.value = Jia(jia.value, config.level), cleanTextAreaHeight(jie)
