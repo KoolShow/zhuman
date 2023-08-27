@@ -123,11 +123,11 @@ window.onload = () => {
     if (word) {
         if (mode == 'encode') {
             var jia = document.getElementById("jia");
-            jia.value = word;
+            jia.value = decodeURIComponent(word);
             Encode();
         } else if (mode == 'decode') {
             var jie = document.getElementById("jie");
-            jie.value = word;
+            jie.value = decodeURIComponent(word);
             Decode();
         }
     }
