@@ -1,5 +1,5 @@
 from zlib import compress as 压缩, decompress as 解压
-import sys, traceback
+import traceback
 
 最小=9
 最快=1
